@@ -1,3 +1,3 @@
-import { addPlayerCreator } from "./Roster.js"
+import { addPlayerCreator } from "./roster/addPlayer.js"
 
 addPlayerCreator()
