@@ -1,3 +1,1 @@
-import { TeamList } from "./teams/TeamList.js"
-
-TeamList()
+import "./Roster.js"
