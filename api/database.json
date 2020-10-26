@@ -1,39 +1,45 @@
 {
-    "teams": [
-        {
-            "id": 1,
-            "name": "The Pitchstorm Progamers",
-            "creationDate": "10/23/2020"
-        }
-    ],
-    "players": [
-        {
-            "id": 1,
-            "firstName": "David",
-            "lastName": "Williams",
-            "countyOfOrigin": "USA",
-            "teamID": 1
-        },
-        {
-            "id": 2,
-            "firstName": "Dillon",
-            "lastName": "Draper",
-            "countyOfOrigin": "USA",
-            "teamID": 1
-        },
-        {
-            "id": 3,
-            "firstName": "Silas",
-            "lastName": "Lowe",
-            "countyOfOrigin": "USA",
-            "teamID": 1
-        }
-    ],
-    "teamScores": [
-        {
-            "teamID": 1,
-            "score": 14,
-            "dateOfGame": "10/23/2020"
-        }
-    ]
+  "teams": [
+    {
+      "id": 1,
+      "name": "The Pitchstorm Progamers",
+      "creationDate": "10/23/2020"
+    },
+    
+    {
+      "name": "The Green Dragons",
+      "creationDate": 1603744783654,
+      "id": 2
+    }
+  ],
+  "players": [
+    {
+      "id": 1,
+      "firstName": "David",
+      "lastName": "Williams",
+      "countyOfOrigin": "USA",
+      "teamID": 1
+    },
+    {
+      "id": 2,
+      "firstName": "Dillon",
+      "lastName": "Draper",
+      "countyOfOrigin": "USA",
+      "teamID": 1
+    },
+    {
+      "id": 3,
+      "firstName": "Silas",
+      "lastName": "Lowe",
+      "countyOfOrigin": "USA",
+      "teamID": 1
+    }
+  ],
+  "teamScores": [
+    {
+      "teamID": 1,
+      "score": 14,
+      "dateOfGame": "10/23/2020"
+    }
+  ]
 }

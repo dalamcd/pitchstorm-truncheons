@@ -1,4 +1,5 @@
 import { getTeams, useTeams } from "./teams/TeamProvider.js"
+import './Roster.js'
 
 console.log("Welcome to the main module")
 getTeams().then(()=>
