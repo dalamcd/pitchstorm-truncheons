@@ -1,7 +1,6 @@
 import { getTeams, useTeams } from "../teams/TeamProvider.js"
 
 const eventHub = document.querySelector(".container")
-const contentTarget = document.querySelector("#team-select-dropdown")
 
 eventHub.addEventListener("change", (event) => {
   if (event.target.id === "team-select-dropdown") {
@@ -19,9 +18,11 @@ export const TeamSelect = () => {
     const teamArray = useTeams()
     render(teamArray)
   })
+
 }
 
 const render = (collection) => {
+  const contentTarget = document.querySelector("#team-select-dropdown")
   contentTarget.innerHTML += collection.map(
     (team) => `<option value="${team.id}">${team.name}</option> `
   )
