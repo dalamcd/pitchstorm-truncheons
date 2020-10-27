@@ -1,3 +1,4 @@
-import { renderRoster } from "./Roster.js";
-
-renderRoster()
+import { homePageClickEvents } from "../homepage/HomePage.js";
+import { homePageList } from "../homepage/HomePageList.js";
+homePageList()
+homePageClickEvents()
