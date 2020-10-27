@@ -4,10 +4,43 @@
       "id": 1,
       "name": "The Pitchstorm Progamers",
       "creationDate": "10/23/2020"
+<<<<<<< HEAD
     }
   ],
   "players": [
  
+=======
+    },
+    
+    {
+      "name": "The Green Dragons",
+      "creationDate": 1603744783654,
+      "id": 2
+    }
+  ],
+  "players": [
+    {
+      "id": 1,
+      "firstName": "David",
+      "lastName": "Williams",
+      "countyOfOrigin": "USA",
+      "teamID": 1
+    },
+    {
+      "id": 2,
+      "firstName": "Dillon",
+      "lastName": "Draper",
+      "countyOfOrigin": "USA",
+      "teamID": 1
+    },
+    {
+      "id": 3,
+      "firstName": "Silas",
+      "lastName": "Lowe",
+      "countyOfOrigin": "USA",
+      "teamID": 1
+    }
+>>>>>>> main
   ],
   "teamScores": [
     {
