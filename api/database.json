@@ -5,11 +5,15 @@
       "name": "The Pitchstorm Progamers",
       "creationDate": "10/23/2020"
     },
-    
     {
       "name": "The Green Dragons",
       "creationDate": 1603744783654,
       "id": 2
+    },
+    {
+      "name": "New Team",
+      "creationDate": 1603812636231,
+      "id": 3
     }
   ],
   "players": [
@@ -54,6 +58,12 @@
       "lastName": "Bartlett",
       "countyOfOrigin": "USA",
       "teamID": 2
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Tester",
+      "countryOfOrigin": "Test Country",
+      "id": 7
     }
   ],
   "teamScores": [

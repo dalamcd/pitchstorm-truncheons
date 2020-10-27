@@ -1,4 +1,3 @@
-import { addPlayerCreator } from "./roster/addPlayer.js"
-import "./Roster.js"
+import { renderRoster } from "./Roster.js";
 
-addPlayerCreator()
+renderRoster()
