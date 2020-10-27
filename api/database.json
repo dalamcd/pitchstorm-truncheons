@@ -4,12 +4,6 @@
       "id": 1,
       "name": "The Pitchstorm Progamers",
       "creationDate": "10/23/2020"
-<<<<<<< HEAD
-    }
-  ],
-  "players": [
- 
-=======
     },
     
     {
@@ -39,8 +33,28 @@
       "lastName": "Lowe",
       "countyOfOrigin": "USA",
       "teamID": 1
+    },
+    {
+      "id": 4,
+      "firstName": "John",
+      "lastName": "Doe",
+      "countyOfOrigin": "USA",
+      "teamID": 2
+    },
+    {
+      "id": 5,
+      "firstName": "Jacob",
+      "lastName": "Applecart",
+      "countyOfOrigin": "USA",
+      "teamID": 2
+    },
+    {
+      "id": 6,
+      "firstName": "Benjamin",
+      "lastName": "Bartlett",
+      "countyOfOrigin": "USA",
+      "teamID": 2
     }
->>>>>>> main
   ],
   "teamScores": [
     {
