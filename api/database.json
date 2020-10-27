@@ -71,6 +71,21 @@
       "teamID": 1,
       "score": 14,
       "dateOfGame": "10/23/2020"
+    },
+    {
+      "teamID": 1,
+      "score": 2,
+      "dateOfGame": "10/23/2020"
+    },
+    {
+      "teamID": 1,
+      "score": 13,
+      "dateOfGame": "10/23/2020"
+    },
+    {
+      "teamID": 2,
+      "score": 14,
+      "dateOfGame": "10/23/2020"
     }
   ]
 }
