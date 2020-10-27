@@ -1,4 +1,4 @@
-import { getTeams, useTeams } from "./TeamProvider.js"
+import { getTeams, useTeams } from "../teams/TeamProvider.js"
 
 const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector("#team-select-dropdown")
