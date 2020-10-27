@@ -1,5 +1,6 @@
 import { saveTeam } from "./saveTeam.js"
 import { playerMenus } from "./PlayerMenus.js"
+import { modifyTeam } from "./modifyTeam.js";
 
 const eventHub = document.querySelector(".container");
 
@@ -23,6 +24,10 @@ eventHub.addEventListener("click", (click) => {
             creationDate: timeStamp,
         }
         saveTeam(newTeam)
+    }
+
+    if(click.target.id === "manageRoster__Team__modifyTeam"){
+        modifyTeam();
     }
 })
 
