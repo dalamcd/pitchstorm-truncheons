@@ -6,6 +6,9 @@ header {
   -moz-box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.75);
   width: 100%;
+  margin: 0 0 2rem 0;
+  padding: 2rem;
+  font-size: 3rem;
 }
 
 body {
@@ -17,7 +20,7 @@ body {
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-.container {
+.formContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

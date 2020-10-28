@@ -1,15 +1,16 @@
 // select the main part of the index.html
-const contentTarget=document.querySelector(".container")
- 
+const contentTarget = document.querySelector(".container")
+
 // following the pattern we have learned before
-export const RosterList=()=>{
-   const rosterHTML=render()
-   contentTarget.innerHTML=rosterHTML
- 
+export const RosterList = () => {
+  const rosterHTML = render()
+  contentTarget.innerHTML = rosterHTML
 }
 // returning the html
-const render=()=>{
-   return `
+const render = () => {
+  return `
+   <header>Manage Roster</header>
+   <div class="formContainer">
    <section class="manageRoster__Select">
      <h3>Add Team</h3>
      <input id="addTeam__text" type="text" />
@@ -36,7 +37,6 @@ const render=()=>{
      <input type="text" />
      <button class="btn">Submit</button>
    </section>
+   </div>
    `
- 
 }
- 

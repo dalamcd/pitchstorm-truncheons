@@ -28,8 +28,8 @@ export const LeaderboardList = () => {
 const render = () => {
   const counter = 1
   contentTarget.innerHTML = `
-   <header>Leaderboard<header>
-   <main class="container">
+   <header>Leaderboard</header>
+  
    <div class="row"> 
        <p>1</p>
        <p>Dragons</p>
@@ -45,6 +45,5 @@ const render = () => {
     <p>SANDWICHES</p>
     <p>32</p>
  </div>
- </main>
    `
 }
