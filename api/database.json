@@ -69,7 +69,7 @@
   "teamScores": [
     {
       "teamID": 1,
-      "score": 14,
+      "score": 1400,
       "dateOfGame": "10/23/2020"
     },
     {
@@ -84,7 +84,7 @@
     },
     {
       "teamID": 2,
-      "score": 14,
+      "score": 14000,
       "dateOfGame": "10/23/2020"
     }
   ]
