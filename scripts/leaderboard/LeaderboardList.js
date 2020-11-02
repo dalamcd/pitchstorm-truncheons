@@ -3,21 +3,16 @@ import { getTeams, useTeams } from "../teams/TeamProvider.js"
 import { LeaderboardRow } from "./LeaderboardRow.js"
 
 const contentTarget = document.querySelector(".container")
-const rank = document.querySelector(".leaderboard__rank")
-const team = document.querySelector(".leaderboard__team")
-const totalScore = document.querySelector(".leaderboard__score")
 
 export async function LeaderboardList() {
   const teamRaw = await getTeams()
   const teamArray = await useTeams()
   const scoresRaw = await getScores()
   const scoresArray = await useScores()
-  let counter = 1
+
   let leaderboardArray = leaderboardObject(teamArray, scoresArray)
   render()
-  leaderboardArray.map((teamObj) => {
-    LeaderboardRow(teamObj)
-  })
+  renderColumns(leaderboardArray)
 }
 
 const leaderboardObject = (arrayOfTeams, arrayOfScores) => {
@@ -41,9 +36,9 @@ const render = () => {
   <section class="mainContainer">
   <div class="leaderboardContainer">
      <div class="leaderboard__titles">
-       <p class="leaderboard__rank">Rank</p>
-       <p class="leaderboard__team">Team</p>
-       <p class="leaderboard__score">Score</p>
+       <p class="leaderboard__title__rank">Rank</p>
+       <p class="leaderboard__title__team">Team</p>
+       <p class="leaderboard__title__score">Score</p>
      </div> 
      <div class="leaderboard__columns">
      <div class="leaderboard__rank"></div>
@@ -55,74 +50,12 @@ const render = () => {
   `
 }
 
-// export const LeaderboardList = () => {
-//     return getTeams().then(() => {
-//       const teamArray = useTeams()
-//       //   console.log(teamArray)
-//       return teamArray
-//     })
-//   }
-
-//   const scoresCollection = () => {
-//     return getScores().then(() => {
-//       const scoresArray = useScores()
-//       //   console.log(scoresArray)
-//       return scoresArray
-//     })
-//   }
-//   const teamsArray = teamsCollection()
-//   const scoreArray = scoresCollection()
-
-//   console.log("Var for func tcollection", teamsArray)
-//   console.log("Var for func tcollection", scoreArray)
-
-// const teamArray = [
-//   {
-//     "id": 1,
-//     "name": "The Pitchstorm Progamers",
-//     "creationDate": "10/23/2020",
-//   },
-//   {
-//     "name": "The Green Dragons",
-//     "creationDate": 1603744783654,
-//     "id": 2,
-//   },
-//   {
-//     "name": "New Team",
-//     "creationDate": 1603812636231,
-//     "id": 3,
-//   }
-// ]
-
-// const scoresArray = [
-//   {
-//     "teamID": 2,
-//     "score": 1,
-//     "dateOfGame": "10/23/2020",
-//   },
-//   {
-//     "teamID": 1,
-//     "score": 14,
-//     "dateOfGame": "10/23/2020",
-//   },
-
-//   {
-//     "teamID": 1,
-//     "score": 13,
-//     "dateOfGame": "10/23/2020",
-//   },
-//   {
-//     "teamID": 1,
-//     "score": 6,
-//     "dateOfGame": "10/23/2020",
-//   }
-// ]
-
-// }
-
-// ${arrayOfTeams.map(team => `<div class="leaderboardHTML">
-// <p class="leaderBox">Rank: ${counter++}</p>
-// <p class="leaderBox">Team: ${team.name}</p>
-// <p class="leaderBox">Total Points: ${team.score}</p>
-// </div>
-// `).join(" ")}
+const renderColumns = (arr) => {
+  const rank = document.querySelector(".leaderboard__rank")
+  let counter = 0
+  arr.map((teamObj) => {
+    counter++
+    rank.innerHTML += `<p>${counter}</p>`
+    LeaderboardRow(teamObj)
+  })
+}
