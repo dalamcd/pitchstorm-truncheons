@@ -1,18 +1,60 @@
 .leaderboardContainer {
-    border: 3px solid black;
-    background-color: rgb(222, 184, 135, .8);
-    width: 80%;
-  }
-  
-  .leaderboardHTML {
-    display: flex;
-    flex-direction: row;
-    font-size: 1.5rem;
-    color: white
-  }
-  
-  .leaderBox {
-    border: 2px solid black;
-    padding: .25rem;
-    margin: .5rem;
-  }
+  border: 3px solid black;
+  background-color: rgb(222, 184, 135, 0.8);
+  width: 80%;
+}
+
+.leaderboardHTML {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.leaderBox {
+  border: 2px solid black;
+  padding: 0.25rem;
+  margin: 0.5rem;
+}
+
+.leaderboard__titles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.leaderboard__rank {
+  width: 25%;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  text-align: center;
+}
+
+.leaderboard__team {
+  width: 50%;
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+
+.leaderboard__score {
+  width: 25%;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  text-align: center;
+}
+
+.leaderboard__columns {
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.leaderboard__rank {
+  border-right: 2px solid black;
+}
+.leaderboard__team {
+}
+.leaderboard__score {
+  border-left: 2px solid black;
+}

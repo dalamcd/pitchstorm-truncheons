@@ -1,11 +1,12 @@
-export const LeaderboardRow = (rowBob, position) => {
-  const { name, score } = rowObj
+import { getTeams } from "../teams/TeamProvider"
 
-  return `
-    <div class="row"> 
-       <p>${posiiton}</p>
-       <p>${name}</p>
-       <p>${score}</p>
-    </div>
-    `
+export const LeaderboardRow = (rowObj) => {
+  const { name, score } = rowObj
+  counter++
+
+  rank.innerHTML += counter
+
+  getTeams.innerHTML += name
+
+  score.innerHTML += totalScore
 }
