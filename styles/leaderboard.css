@@ -24,24 +24,26 @@
   font-size: 2rem;
 }
 
+.leaderboard__title__rank,
+.leaderboard__title__score,
+.leaderboard__title__team {
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+
 .leaderboard__title__rank {
   width: 10%;
-  border-bottom: 2px solid black;
   border-right: 2px solid black;
-  text-align: center;
 }
 
 .leaderboard__title__team {
   width: 60%;
   border-bottom: 2px solid black;
-  text-align: center;
 }
 
 .leaderboard__title__score {
   width: 30%;
-  border-bottom: 2px solid black;
   border-left: 2px solid black;
-  text-align: center;
 }
 
 .leaderboard__columns {
@@ -50,20 +52,21 @@
   flex-direction: row;
 }
 
-.leaderboard__rank {
+.leaderboard__rank,
+.leaderboard__score,
+.leaderboard__team {
   display: flex;
   flex-direction: column;
+}
+
+.leaderboard__rank {
   width: 10%;
   border-right: 2px solid black;
 }
 .leaderboard__team {
-  display: flex;
-  flex-direction: column;
   width: 60%;
 }
 .leaderboard__score {
-  display: flex;
-  flex-direction: column;
   width: 30%;
   border-left: 2px solid black;
 }

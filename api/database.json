@@ -69,7 +69,7 @@
   "teamScores": [
     {
       "teamID": 1,
-      "score": 1400,
+      "score": 140,
       "dateOfGame": "10/23/2020"
     },
     {
@@ -83,8 +83,18 @@
       "dateOfGame": "10/23/2020"
     },
     {
+      "teamID": 3,
+      "score": 141,
+      "dateOfGame": "10/23/2020"
+    },
+    {
+      "teamID": 3,
+      "score": 2,
+      "dateOfGame": "10/23/2020"
+    },
+    {
       "teamID": 2,
-      "score": 14000,
+      "score": 1,
       "dateOfGame": "10/23/2020"
     }
   ]

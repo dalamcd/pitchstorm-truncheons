@@ -1,5 +1,6 @@
 import { getScores, useScores } from "../score/ScoreProvider.js"
 import { getTeams, useTeams } from "../teams/TeamProvider.js"
+import { leaderboardObject } from "./LeaderboardProvider.js"
 import { LeaderboardRow } from "./LeaderboardRow.js"
 
 const contentTarget = document.querySelector(".container")
@@ -13,21 +14,6 @@ export async function LeaderboardList() {
   let leaderboardArray = leaderboardObject(teamArray, scoresArray)
   render()
   renderColumns(leaderboardArray)
-}
-
-const leaderboardObject = (arrayOfTeams, arrayOfScores) => {
-  const teamObjects = arrayOfTeams.map(function (team) {
-    return { "name": team.name, "score": scoreCalc(team, arrayOfScores) }
-  })
-  return teamObjects.sort((a, b) => b.score - a.score)
-}
-
-const scoreCalc = (team, scoresArray) => {
-  const scoresObject = scoresArray
-    .filter((score) => score.teamID === team.id)
-    .map((teamScore) => teamScore.score)
-    .reduce((a, b) => a + b, 0)
-  return scoresObject
 }
 
 const render = () => {
