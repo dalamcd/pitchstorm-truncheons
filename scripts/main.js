@@ -3,8 +3,8 @@ import { renderRoster } from "./Roster.js"
 
 // renderRoster()
 
-LeaderboardList()
-// import { homePageClickEvents } from "../homepage/HomePage.js"
-// import { homePageList } from "../homepage/HomePageList.js"
-// homePageList()
-// homePageClickEvents()
+// LeaderboardList()
+import { homePageClickEvents } from "../homepage/HomePage.js"
+import { homePageList } from "../homepage/HomePageList.js"
+homePageList()
+homePageClickEvents()

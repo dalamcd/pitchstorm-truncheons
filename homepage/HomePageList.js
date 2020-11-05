@@ -13,6 +13,13 @@ export const homePageList=()=>{
             })
             eventHub.dispatchEvent(rosterClickEvent)
         }
+
+        else if (event.target.id === "homePageButton__leaderboard") {
+                const leaderboardClickEvent = new CustomEvent("chosenLeaderboard", {
+                })
+                console.log("click")
+                eventHub.dispatchEvent(leaderboardClickEvent)
+        }
     })
 }
 
