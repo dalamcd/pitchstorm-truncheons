@@ -25,9 +25,11 @@ export const homePageList=()=>{
 
 const render=()=>{
     return `
+    <header>Truncheons and Flagons</header>
+    <navbar class=navBarHome>
     <button class=homePageButton id=homePageButton__roster>Roster</button>
     <button class=homePageButton id=homePageButton__gamePlay>Play Game</button>
     <button class=homePageButton id=homePageButton__leaderboard>LeaderBoard</button>
-
+    </navbar>
     `
 }
