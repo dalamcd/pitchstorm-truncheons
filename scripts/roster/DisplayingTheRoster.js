@@ -1,3 +1,5 @@
+import { playerMenus } from "./PlayerMenus.js"
+
 // select the main part of the index.html
 const contentTarget = document.querySelector(".container")
 
@@ -5,6 +7,8 @@ const contentTarget = document.querySelector(".container")
 export const RosterList = () => {
   const rosterHTML = render()
   contentTarget.innerHTML = rosterHTML
+  playerMenus(1);
+
 }
 // returning the html
 const render = () => {

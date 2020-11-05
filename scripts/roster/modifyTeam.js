@@ -5,9 +5,10 @@ const eventHub = document.querySelector(".container");
 
 export const changePlayerTeam = (playerID, teamID) => {
 
-    getPlayers().then(() => {
+    return getPlayers().then(() => {
         const player = usePlayers().find(playerObj => playerObj.id === playerID);
-        player.teamID = teamID;
+        if (player)
+            player.teamID = teamID;
 
         return fetch(`http://localhost:8088/players/${player.id}`, {
             method: "PATCH",
@@ -20,7 +21,6 @@ export const changePlayerTeam = (playerID, teamID) => {
 }
 
 export const modifyTeam = () => {
-    //debugger
     getTeams().then(() => {
         const teamID = useTeams().find(
             team => team.id === parseInt(document.querySelector("#team-select-dropdown").value)).id;
@@ -32,5 +32,20 @@ export const modifyTeam = () => {
         changePlayerTeam(playerOne, teamID);
         changePlayerTeam(playerTwo, teamID);
         changePlayerTeam(playerThree, teamID);
-    })
+
+        usePlayers().forEach(player => {
+            if (player.id !== playerOne && player.id !== playerTwo && player.id !== playerThree) {
+                if (player.teamID === teamID) {
+                    changePlayerTeam(player.id, 0).then(() => {
+                        eventHub.dispatchEvent(new CustomEvent("teamDropdownStateChanged", {
+                            detail: {
+                                teamID
+                            }
+                        }));
+                    });
+                }
+            }
+        });
+
+    });
 }
