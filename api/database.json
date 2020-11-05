@@ -16,9 +16,20 @@
       "id": 3
     },
     {
+<<<<<<< HEAD
+      "name": "Testing 1 2 3",
+      "creationDate": 1604603502998,
+      "id": 4
+    },
+    {
+      "name": "",
+      "creationDate": 1604604179613,
+      "id": 5
+=======
       "name": "Carrot Top",
       "creationDate": 1603812636255,
       "id": 4
+>>>>>>> main
     }
   ],
   "players": [
