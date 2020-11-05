@@ -22,7 +22,7 @@
       "firstName": "David",
       "lastName": "Williams",
       "countyOfOrigin": "USA",
-      "teamID": 1
+      "teamID": 3
     },
     {
       "id": 2,
@@ -36,7 +36,7 @@
       "firstName": "Silas",
       "lastName": "Lowe",
       "countyOfOrigin": "USA",
-      "teamID": 1
+      "teamID": 3
     },
     {
       "id": 4,
@@ -63,7 +63,8 @@
       "firstName": "Test",
       "lastName": "Tester",
       "countryOfOrigin": "Test Country",
-      "id": 7
+      "id": 7,
+      "teamID": 3
     }
   ],
   "teamScores": [
