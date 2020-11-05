@@ -17,9 +17,14 @@ export const homePageList=()=>{
         else if (event.target.id === "homePageButton__leaderboard") {
                 const leaderboardClickEvent = new CustomEvent("chosenLeaderboard", {
                 })
-                console.log("click")
                 eventHub.dispatchEvent(leaderboardClickEvent)
         }
+        else if (event.target.id === "homePageButton__gamePlay") {
+            const gamePlayClickEvent = new CustomEvent("chosenGamePlay", {
+            })
+            console.log("click")
+            eventHub.dispatchEvent(gamePlayClickEvent)
+    }
     })
 }
 
