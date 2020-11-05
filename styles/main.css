@@ -2,6 +2,8 @@
 @import "homepage.css";
 @import "roster.css";
 
+@import "leaderboard.css";
+
 /*Typography
 --------------------------------------------------------------*/
 
@@ -29,4 +31,9 @@ h5,
 h6 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
 }
