@@ -6,7 +6,15 @@ export const LeaderboardRow = (rowObj) => {
   const team = document.querySelector(".leaderboard__team")
   const totalScore = document.querySelector(".leaderboard__score")
 
-  team.innerHTML += `<p>${name}</p>`
+  // Populates the team name htlm.
 
-  totalScore.innerHTML += `<p>${score}</p>`
+  team.innerHTML += `<p>${name}</p>
+  <div class="divider"></div>
+  `
+
+  // Populates the team score htlm.
+
+  totalScore.innerHTML += `<p>${score}</p>
+  <div class="divider"></div>
+  `
 }

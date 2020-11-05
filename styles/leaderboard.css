@@ -32,17 +32,17 @@
 }
 
 .leaderboard__title__rank {
-  width: 10%;
+  width: 12%;
   border-right: 2px solid black;
 }
 
 .leaderboard__title__team {
-  width: 60%;
+  width: 63%;
   border-bottom: 2px solid black;
 }
 
 .leaderboard__title__score {
-  width: 30%;
+  width: 25%;
   border-left: 2px solid black;
 }
 
@@ -57,21 +57,33 @@
 .leaderboard__team {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .leaderboard__rank {
-  width: 10%;
+  width: 12%;
   border-right: 2px solid black;
 }
 .leaderboard__team {
-  width: 60%;
+  width: 63%;
+  display: flex;
 }
 .leaderboard__score {
-  width: 30%;
+  width: 25%;
   border-left: 2px solid black;
 }
 
 .leaderboard__columns p {
   margin: 1.5rem;
-  font-size: 2rem;
+  font-size: 1.75rem;
+}
+
+.divider {
+  min-width: 80%;
+  border-bottom: 2px solid black;
+}
+
+.leaderboard__columns :last-child {
+  border-bottom: 0px solid black;
+}
 }

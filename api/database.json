@@ -11,9 +11,14 @@
       "id": 2
     },
     {
-      "name": "New Team",
+      "name": "Fart Wolf",
       "creationDate": 1603812636231,
       "id": 3
+    },
+    {
+      "name": "Carrot Top",
+      "creationDate": 1603812636255,
+      "id": 4
     }
   ],
   "players": [
@@ -73,8 +78,8 @@
       "dateOfGame": "10/23/2020"
     },
     {
-      "teamID": 1,
-      "score": 2,
+      "teamID": 2,
+      "score": 1,
       "dateOfGame": "10/23/2020"
     },
     {
@@ -93,7 +98,7 @@
       "dateOfGame": "10/23/2020"
     },
     {
-      "teamID": 2,
+      "teamID": 4,
       "score": 1,
       "dateOfGame": "10/23/2020"
     }
