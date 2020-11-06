@@ -13,14 +13,28 @@ export const homePageList=()=>{
             })
             eventHub.dispatchEvent(rosterClickEvent)
         }
+
+        else if (event.target.id === "homePageButton__leaderboard") {
+                const leaderboardClickEvent = new CustomEvent("chosenLeaderboard", {
+                })
+                eventHub.dispatchEvent(leaderboardClickEvent)
+        }
+        else if (event.target.id === "homePageButton__gamePlay") {
+            const gamePlayClickEvent = new CustomEvent("chosenGamePlay", {
+            })
+            console.log("click")
+            eventHub.dispatchEvent(gamePlayClickEvent)
+    }
     })
 }
 
 const render=()=>{
     return `
+    <header>Truncheons and Flagons</header>
+    <navbar class=navBarHome>
     <button class=homePageButton id=homePageButton__roster>Roster</button>
     <button class=homePageButton id=homePageButton__gamePlay>Play Game</button>
     <button class=homePageButton id=homePageButton__leaderboard>LeaderBoard</button>
-
+    </navbar>
     `
 }

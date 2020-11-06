@@ -13,7 +13,13 @@ export const RosterList = () => {
 // returning the html
 const render = () => {
   return `
+  
    <header>Manage Roster</header>
+   <navbar class=navBarHome>
+   <button class=homePageButton id=homePageButton__roster>Roster</button>
+   <button class=homePageButton id=homePageButton__gamePlay>Play Game</button>
+   <button class=homePageButton id=homePageButton__leaderboard>LeaderBoard</button>
+   </navbar>
    <div class="formContainer">
    <section class="manageRoster__Select">
      <h3>Add Team</h3>

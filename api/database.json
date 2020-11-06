@@ -11,19 +11,14 @@
       "id": 2
     },
     {
-      "name": "New Team",
+      "name": "Fart Wolf",
       "creationDate": 1603812636231,
       "id": 3
     },
     {
-      "name": "Testing 1 2 3",
-      "creationDate": 1604603502998,
+      "name": "Carrot Top",
+      "creationDate": 1603812636255,
       "id": 4
-    },
-    {
-      "name": "",
-      "creationDate": 1604604179613,
-      "id": 5
     }
   ],
   "players": [
@@ -32,55 +27,80 @@
       "firstName": "David",
       "lastName": "Williams",
       "countyOfOrigin": "USA",
-      "teamID": 1
+      "teamID": 3
     },
     {
       "id": 2,
       "firstName": "Dillon",
       "lastName": "Draper",
       "countyOfOrigin": "USA",
-      "teamID": 0
+      "teamID": 1
     },
     {
       "id": 3,
       "firstName": "Silas",
       "lastName": "Lowe",
       "countyOfOrigin": "USA",
-      "teamID": 1
+      "teamID": 3
     },
     {
       "id": 4,
       "firstName": "John",
       "lastName": "Doe",
       "countyOfOrigin": "USA",
-      "teamID": 0
+      "teamID": 2
     },
     {
       "id": 5,
       "firstName": "Jacob",
       "lastName": "Applecart",
       "countyOfOrigin": "USA",
-      "teamID": 0
+      "teamID": 2
     },
     {
       "id": 6,
       "firstName": "Benjamin",
       "lastName": "Bartlett",
       "countyOfOrigin": "USA",
-      "teamID": 1
+      "teamID": 2
     },
     {
       "firstName": "Test",
       "lastName": "Tester",
       "countryOfOrigin": "Test Country",
       "id": 7,
-      "teamID": 0
+      "teamID": 3
     }
   ],
   "teamScores": [
     {
       "teamID": 1,
-      "score": 14,
+      "score": 140,
+      "dateOfGame": "10/23/2020"
+    },
+    {
+      "teamID": 2,
+      "score": 1,
+      "dateOfGame": "10/23/2020"
+    },
+    {
+      "teamID": 1,
+      "score": 13,
+      "dateOfGame": "10/23/2020"
+    },
+    {
+      "teamID": 3,
+      "score": 141,
+      "dateOfGame": "10/23/2020"
+    },
+    {
+      "teamID": 3,
+      "score": 2,
+      "dateOfGame": "10/23/2020"
+    },
+    {
+      "teamID": 4,
+      "score": 1,
       "dateOfGame": "10/23/2020"
     }
   ]

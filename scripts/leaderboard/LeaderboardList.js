@@ -31,6 +31,11 @@ export const LeaderboardList = () => {
 const render = () => {
   contentTarget.innerHTML = `
   <header>Leaderboard</header>
+  <navbar class=navBarHome>
+  <button class=homePageButton id=homePageButton__roster>Roster</button>
+  <button class=homePageButton id=homePageButton__gamePlay>Play Game</button>
+  <button class=homePageButton id=homePageButton__leaderboard>LeaderBoard</button>
+  </navbar>
   <section class="mainContainer">
   <div class="leaderboardContainer">
      <div class="leaderboard__titles">
