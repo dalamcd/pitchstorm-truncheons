@@ -16,10 +16,10 @@ const render = () => {
     <table border="1">
 <tbody>
 <tr>
-<td>blah</td>
-<td>blah;</td>
-<td>blah;</td>
-<td>blah;</td>
+<th>Pick your Team</th>
+<th>Magical Race</th>
+<th>Input Score;</th>
+<th>Total Score;</th>
 </tr>
 <tr>
 <td>blah</td>

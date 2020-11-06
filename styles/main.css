@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
 @import "homepage.css";
 @import "roster.css";
-
 @import "leaderboard.css";
+@import "gameplay.css";
 
 /*Typography
 --------------------------------------------------------------*/
@@ -37,7 +37,4 @@ h6 {
   display: flex;
   flex-direction: column;
 }
-.GamePlayTable{
-  color:white;
-  min-width: 100%;
-}
+

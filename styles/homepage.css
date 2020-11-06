@@ -2,6 +2,7 @@
     min-height: 100px;
     display:flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 .homePageButton{
 
