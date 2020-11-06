@@ -5,32 +5,45 @@ const eventHub = document.querySelector(".container");
 
 export const changePlayerTeam = (playerID, teamID) => {
 
-    getPlayers().then(() => {
+    return getPlayers().then(() => {
         const player = usePlayers().find(playerObj => playerObj.id === playerID);
-        player.teamID = teamID;
+        if (player) {
+            player.teamID = teamID;
 
-        return fetch(`http://localhost:8088/players/${player.id}`, {
-            method: "PATCH",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(player)
-        });
+            return fetch(`http://localhost:8088/players/${player.id}`, {
+                method: "PATCH",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(player)
+            });
+        }
     });
 }
 
-export const modifyTeam = () => {
-    //debugger
+export const modifyTeam = (teamObj) => {
     getTeams().then(() => {
-        const teamID = useTeams().find(
-            team => team.id === parseInt(document.querySelector("#team-select-dropdown").value)).id;
 
-        const playerOne = parseInt(document.querySelector("#manageRoster__Team__playerOne").value);
-        const playerTwo = parseInt(document.querySelector("#manageRoster__Team__playerTwo").value);
-        const playerThree = parseInt(document.querySelector("#manageRoster__Team__playerThree").value);
+        let promiseChain = [];
+        //debugger
+        promiseChain.push(changePlayerTeam(teamObj.pOneId, teamObj.teamId));
+        promiseChain.push(changePlayerTeam(teamObj.pTwoId, teamObj.teamId));
+        promiseChain.push(changePlayerTeam(teamObj.pThreeId, teamObj.teamId));
 
-        changePlayerTeam(playerOne, teamID);
-        changePlayerTeam(playerTwo, teamID);
-        changePlayerTeam(playerThree, teamID);
-    })
+        usePlayers().forEach(player => {
+            if (player.id !== teamObj.pOneId && player.id !== teamObj.pTwoId && player.id !== teamObj.pThreeId) {
+                if (player.teamID === teamObj.teamId) {
+                    promiseChain.push(changePlayerTeam(player.id, 0));
+                }
+            }
+        });
+        Promise.all(promiseChain)
+            .then(() => {
+                eventHub.dispatchEvent(new CustomEvent("teamDropdownStateChanged", {
+                    detail: {
+                        teamID: teamObj.teamId
+                    }
+                }));
+            })
+    });
 }

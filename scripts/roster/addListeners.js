@@ -1,6 +1,7 @@
 import { saveTeam } from "./saveTeam.js"
 import { playerMenus } from "./PlayerMenus.js"
 import { modifyTeam } from "./modifyTeam.js";
+import { useTeams } from "../teams/TeamProvider.js"
 
 const eventHub = document.querySelector(".container");
 
@@ -27,7 +28,16 @@ eventHub.addEventListener("click", (click) => {
     }
 
     if(click.target.id === "manageRoster__Team__modifyTeam"){
-        modifyTeam();
+
+        const teamObj = {
+            teamId: useTeams().find(
+                team => team.id === parseInt(document.querySelector("#team-select-dropdown").value)).id,
+            pOneId: parseInt(document.querySelector("#manageRoster__Team__playerOne").value),
+            pTwoId: parseInt(document.querySelector("#manageRoster__Team__playerTwo").value),
+            pThreeId: parseInt(document.querySelector("#manageRoster__Team__playerThree").value)
+        }
+
+        modifyTeam(teamObj);
     }
 })
 
