@@ -27,14 +27,14 @@
       "firstName": "David",
       "lastName": "Williams",
       "countyOfOrigin": "USA",
-      "teamID": 3
+      "teamID": 1
     },
     {
       "id": 2,
       "firstName": "Dillon",
       "lastName": "Draper",
       "countyOfOrigin": "USA",
-      "teamID": 1
+      "teamID": 0
     },
     {
       "id": 3,
@@ -48,7 +48,7 @@
       "firstName": "John",
       "lastName": "Doe",
       "countyOfOrigin": "USA",
-      "teamID": 2
+      "teamID": 1
     },
     {
       "id": 5,
@@ -62,7 +62,7 @@
       "firstName": "Benjamin",
       "lastName": "Bartlett",
       "countyOfOrigin": "USA",
-      "teamID": 2
+      "teamID": 1
     },
     {
       "firstName": "Test",
